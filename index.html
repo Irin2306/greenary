@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indoor Plants💚</title>
+    <style>
+      body {
+        background: #ddeedf;
+      }
+      h1 {
+        text-align: center;
+        color: darkgreen;
+        font-size: 45px;
+        font-weight: bold;
+      }
+      h2 {
+        color: darkgreen;
+        text-align: center;
+        border: 1px solid #0b8457;
+        line-height: 50px;
+        padding: 10px;
+        font-size: 30px;
+        border-radius: 6px;
+      }
+      img {
+        display: block;
+        margin: auto;
+        padding: 0;
+        max-width: 100%;
+        width: 500px;
+        border: 1px solid #0b8457;
+        border-radius: 15px;
+      }
+      .line {
+        border: 1px solid #0b8457;
+      }
+      p {
+        text-align: center;
+        line-height: 1.5;
+        font-size: 18px;
+      }
+      button {
+        display: block;
+        margin: auto;
+        margin-top: 40px;
+        font-size: 22px;
+        border-radius: 5px;
+        color: #ffffff;
+        background: #0b8457;
+        padding: 15px 20px;
+        border: none;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.6;
+        cursor: pointer;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background: linear-gradient(#a0e4b0, #ddeedf);
+      }
+      .leaf {
+        font-size: 35px;
+      }
+      .learn-more {
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        color: darkgreen;
+        font-size: 15px;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+      .coded {
+        font-size: 15px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Indoor <span class="leaf">🍀</span> Plants</h1>
+      <h2>a combination of beauty and health</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/078/394/original/p2L3Jy6NNVpPYZKgKuPGbe.jpg?1682203528"
+        alt="Photo with Plants"
+      />
+      <hr class="line" />
+      <p>
+        Indoor gardening is still enjoying a surge in popularity, fed by
+        Instagram greenery-inspired interior designs, plant-based podcasts, and
+        online plant subscription services like Lazy Flora and Grounded.
+      </p>
+      <p>
+        While social media trends are notorious for rapid flourish-and-fade
+        lifecycles, indoor gardening may endure longer than most because of the
+        many ways houseplants <strong>improve health and well-being</strong>.
+      </p>
+      <br />
+      <a
+        href="https://www.healthline.com/health/healthy-home-guide/benefits-of-indoor-plants"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more about <em>Health Benefits</em>
+      </a>
+      <button class="contact-us">Contact Us</button>
+      <p class="coded">Coded by Iryna Podust</p>
+    </div>
+    <script>
+      function contactUs() {
+        let choice = prompt(
+          'Do you want to buy a plant or get more information about our plants (please enter "buy" or "info")?'
+        );
+        choice = choice.toLowerCase();
+        choice = choice.trim();
+        if (choice === "buy") {
+          let phone = prompt("Please enter your phone number");
+          alert("We'll call you on " + phone + " within a few minutes ☎️");
+        } else {
+          let email = prompt("Please enter your email");
+          alert(
+            "We'll send you detailed information to " +
+              email +
+              ". Have a good day 🌞"
+          );
+        }
+      }
+      let contactButton = document.querySelector(".contact-us");
+      contactButton.addEventListener("click", contactUs);
+    </script>
+  </body>
+</html>
